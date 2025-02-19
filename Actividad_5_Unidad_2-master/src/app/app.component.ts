@@ -1,3 +1,5 @@
+
+
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { TarjetaProductoComponent } from './tarjeta-producto/tarjeta-producto.component';
@@ -9,5 +11,13 @@ import { TarjetaProductoComponent } from './tarjeta-producto/tarjeta-producto.co
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'angular-actividad-tres';
+  titulo = 'Hola soy pacheco';
+  usuario = {
+  nombre: 'Manuel Enrique Acosta Pacheco',
+  edad: 19,
+  
+  };
+  saludar() {
+  return `Hola, ${this.usuario.nombre}`;
+  }
 }
